@@ -1,0 +1,15 @@
+@import "./scss/colors.scss";
+@import "./scss/fonts.scss";
+@import "./scss/header.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope-Regular", sans-serif;
+}
+
+.container{
+    width: 75vw;
+    margin: 0 auto;
+}

@@ -1,0 +1,63 @@
+.header {
+    padding: 30px 0;
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbar{
+            display: flex;
+            align-items: center;
+            width: 40%;
+            .logo{
+                img {
+                    width: 70px;
+                }
+            }
+            .navigation-menu{
+                width: 100%;
+                &__list{
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    font-size: 16px;
+                    &-item_active{
+                        a{
+                            color: $red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contacts{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 25%;
+            &__phone{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                &-number{
+                    font-size: 20px;
+                }
+                &-address{
+                    font-size: 10px;
+                    margin-top: -7px;
+                }
+            }
+            &__wrapper{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 40%;
+            }
+        }
+    }
+}
