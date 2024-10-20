@@ -6,6 +6,7 @@
     border: none;
     display: flex;
     overflow: hidden;
+    margin-bottom: 20px;
     &__image{
         img{
             width: 250px;
@@ -13,12 +14,15 @@
             object-fit: cover;
         }
         border-radius: 10px;
-        overflow: hidden;
     }
     &__wrapper{
         display: flex;
         margin-left: 10px;
         padding: 20px 0;
+        width: 100%;
+    }
+    &__car-info{
+        width: 80%;
     }
     &__info-main{
         display: flex;
@@ -50,6 +54,10 @@
         font-weight: 600;
         line-height: 0;
     }
+    .price-none{
+        font-size: 16px;
+    }
+
     &__info-button{
         width: 100px;
         min-height: 30px;
