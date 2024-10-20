@@ -1,0 +1,37 @@
+.stages{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style-type: none;
+        counter-reset: custom-counter;
+    }
+    &__item{
+        width: 310px;
+        counter-increment: custom-counter;
+        margin-bottom: 25px;
+        position: relative;
+        &::before{
+            content: counter(custom-counter);
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            color: $red;
+            z-index: -1;
+            font-size: 93px;
+            opacity: .2;
+            font-weight: 700;
+        }
+    }
+    &__title{
+        color: $red;
+        margin-bottom: 5px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    &__description{
+        font-size: 12px;
+        color: #000;
+        line-height: 16px;
+    }
+}

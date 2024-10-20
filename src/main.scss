@@ -4,6 +4,7 @@
 @import "./scss/header.scss";
 @import "./scss/filters.scss";
 @import "./scss/card-item.scss";
+@import "./scss/stages.scss";
 
 * {
     margin: 0;
@@ -18,7 +19,7 @@
 }
 
 .section-title{
-    margin: 15px 0;
+    margin: 20px 0 10px 0;
     font-size: 25px;
     font-weight: 700;
 }
