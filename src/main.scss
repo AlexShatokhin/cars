@@ -1,6 +1,9 @@
 @import "./scss/colors.scss";
 @import "./scss/fonts.scss";
+
 @import "./scss/header.scss";
+@import "./scss/filters.scss";
+@import "./scss/card-item.scss";
 
 * {
     margin: 0;
@@ -10,6 +13,12 @@
 }
 
 .container{
-    width: 75vw;
+    width: 50vw;
     margin: 0 auto;
+}
+
+.section-title{
+    margin: 15px 0;
+    font-size: 25px;
+    font-weight: 700;
 }

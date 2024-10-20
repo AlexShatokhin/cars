@@ -1,0 +1,44 @@
+.filters{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    .filters{
+        &__item{
+            label {
+                font-size: 12px;
+                display: block;
+                margin-bottom: -3px;
+            }
+            select {
+                width: 200px;
+                height: 40px;
+                border-radius: 7px;
+                border-color: $light-grey;
+                padding: 0 10px;
+                font-size: 14px;
+                outline: none;
+
+            }
+            input{
+                width: 100px;
+                height: 40px;
+                border-radius: 7px;
+                border-color: $light-grey;
+                border-width: 1px;
+                padding: 0 10px;
+                font-size: 14px;
+                outline: none;
+            }
+
+            .left{
+                border-radius: 7px 0 0 7px;
+            }
+            .right{
+                border-radius: 0 7px 7px 0;
+            }
+        }
+        &__inputs{
+            display: flex;
+        }
+    }
+}
