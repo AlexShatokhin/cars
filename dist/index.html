@@ -113,17 +113,27 @@
             <div class="filters">
                 <div class="filters__item">
                     <label for="brand" class="filters__label">Марка</label>
-                    <select name="brand" id="brand" class="filters__select">
-                        <option value="">Все марки</option>
-                    </select>
+                    <div class="filters__select custom-select">
+                        <div class="select">Все марки</div>
+                        <div class="select-options hide">
+                            <div data-value = "all" class="select-options__item selected">Все марки</div>
+                            <div data-value = "brand_1" class="select-options__item">Марка 1</div>
+                            <div data-value = "brand_2"class="select-options__item">Марка 2</div>
+                            <div data-value = "brand_3" class="select-options__item">Марка 3</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="filters__item">
                     <label for="model" class="filters__label">Модель</label>
-                    <select name="model" id="model" class="filters__select">
-                        <option value="">Модель 1</option>
-                        <option value="">Модель 2</option>
-                        <option value="">Модель 3</option>
-                    </select>
+                    <div class="filters__select custom-select">
+                        <div class="select">Все модели</div>
+                        <div class="select-options hide">
+                            <div data-value = "all" class="select-options__item selected">Все модели</div>
+                            <div data-value = "brand_1" class="select-options__item">Модель 1</div>
+                            <div data-value = "brand_2"class="select-options__item">Модель 2</div>
+                            <div data-value = "brand_3" class="select-options__item">Модель 3</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="filters__item">
                     <label for="year" class="filters__label">Год выпуска</label>
