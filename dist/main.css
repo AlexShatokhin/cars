@@ -102,6 +102,7 @@
 }
 .filters .filters__item .left {
   border-radius: 7px 0 0 7px;
+  border-right: 0px;
 }
 .filters .filters__item .right {
   border-radius: 0 7px 7px 0;
@@ -260,7 +261,7 @@
 }
 
 .slider__content-item {
-  min-width: calc(100% - 10px);
+  min-width: 100%;
   border-radius: 10px;
   box-sizing: border-box;
   height: 140px;

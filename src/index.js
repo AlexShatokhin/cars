@@ -2,6 +2,8 @@ import "./main.scss"
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
+
     const slides = document.querySelectorAll('.slider__content-item');
     const dots = document.querySelectorAll('.slider__dot-item');
     let currentIndex = 0;
