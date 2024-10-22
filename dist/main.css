@@ -268,6 +268,26 @@
   margin-left: 35px;
 }
 
+.pagination {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+  margin-left: auto;
+}
+.pagination__item {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 7px;
+  background-color: #EAEAEA;
+}
+.pagination .selected {
+  background-color: rgba(231, 1, 1, 0.4);
+}
+
 .stages__list {
   display: flex;
   justify-content: space-between;
@@ -306,7 +326,7 @@
 
 .slider {
   position: relative;
-  width: 50vw;
+  width: 55vw;
   min-height: 160px;
   margin: 0 auto;
   overflow: hidden;
@@ -396,7 +416,7 @@
 }
 
 .container {
-  width: 50vw;
+  width: 55vw;
   margin: 0 auto;
 }
 

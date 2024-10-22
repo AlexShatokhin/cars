@@ -103,3 +103,23 @@
     }
 
 }
+
+.pagination{
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    margin-left: auto;
+    &__item{
+       width: 25px;
+       height: 25px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 12px; 
+       border-radius: 7px;
+       background-color: $white;
+    }
+    .selected{
+        background-color: rgba($color: $red, $alpha: 0.4);
+    }
+}
