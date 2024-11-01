@@ -43,4 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Инициализация первого слайда
     showSlide(currentIndex);
+    const autoSlide = setInterval(() => {
+        currentIndex = (currentIndex + 1) % dots.length;
+        showSlide(currentIndex);
+    }, 5000);
 });
