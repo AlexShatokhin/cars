@@ -2,6 +2,7 @@
 @import "./scss/fonts.scss";
 @import "./scss/buttons.scss";
 
+//index.html
 @import "./scss/header.scss";
 @import "./scss/filters.scss";
 @import "./scss/card-item.scss";
@@ -11,6 +12,9 @@
 @import "./scss/advantages.scss";
 @import "./scss/special_technique.scss";
 
+//about.html
+@import "./scss/abouts.scss";
+@import "./scss/always.scss";
 
 * {
     margin: 0;

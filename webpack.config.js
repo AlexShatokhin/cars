@@ -19,6 +19,10 @@ module.exports = {
             template: './src/index.html', // Шаблон HTML-файла
             filename: 'index.html', // Имя выходного HTML-файла
         }),
+        new HtmlWebpackPlugin({
+          template: './src/pages/about.html', // Шаблон HTML-файла для страницы "О нас"
+          filename: 'about.html', // Имя выходного HTML-файла для страницы "О нас"
+      }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
         }),
