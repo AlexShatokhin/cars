@@ -1,24 +1,25 @@
 .advantages-cards{
-    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+    padding: 0 60px;
     &__item{
-        position: relative;
-        width: 600px;
-        min-height: 35px;
-        background-color: $white;
-        border-radius: 10px;
-        padding: 10px 0 10px 50px;
-        margin-bottom: 15px;
-        font-size: 12px;
-        &::before{
-            content: "";
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            border-radius: 45px;
-            left: -20px;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #F0ACAC;
-        }
+        width: 240px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    &__image{
+        height: 100px;
+    }
+
+    &__description{
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 22px;
     }
 }
