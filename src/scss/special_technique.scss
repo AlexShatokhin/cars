@@ -1,0 +1,32 @@
+.special_technique{
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__slider {
+        width: 370px;
+        .slider__content-item{
+            height: 240px;
+            img{
+                width: 370px;
+            }
+        }
+    }
+
+    &__item:last-child{
+        margin-left: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p {
+            margin-top: 10px;
+        }
+        p:first-child{
+            margin-top: 0;
+        }
+    }
+}
