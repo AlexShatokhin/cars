@@ -574,6 +574,43 @@
   margin-top: 15px;
 }
 
+.contacts__wrapper {
+  display: flex;
+}
+.contacts__item {
+  width: 195px;
+  min-height: 270px;
+  margin-right: 35px;
+  background-color: #EAEAEA;
+  border-radius: 10px;
+}
+.contacts__image {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 195px;
+}
+.contacts__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-weight: 400;
+  margin-bottom: 5px;
+  padding: 0 20px 0 10px;
+}
+.contacts__post {
+  font-size: 14px;
+}
+.contacts__name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.contacts__phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 * {
   margin: 0;
   padding: 0;
