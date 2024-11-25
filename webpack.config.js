@@ -22,7 +22,11 @@ module.exports = {
         new HtmlWebpackPlugin({
           template: './src/pages/about.html', // Шаблон HTML-файла для страницы "О нас"
           filename: 'about.html', // Имя выходного HTML-файла для страницы "О нас"
-      }),
+        }),
+        new HtmlWebpackPlugin({
+          template: './src/pages/reviews.html', // Шаблон HTML-файла для страницы "О нас"
+          filename: 'reviews.html', // Имя выходного HTML-файла для страницы "О нас"
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
         }),
