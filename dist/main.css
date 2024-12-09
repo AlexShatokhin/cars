@@ -618,12 +618,13 @@
 }
 .accordion__item {
   width: 30%;
-  min-height: 150px;
+  height: 130px;
   border-radius: 10px;
   background-color: #EAEAEA;
   position: relative;
   margin: 0 20px 20px 0;
   padding-bottom: 30px;
+  transition: 0.3s all;
 }
 .accordion__image {
   width: 100%;
@@ -641,7 +642,7 @@
   position: absolute;
   bottom: 5px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(180deg);
   cursor: pointer;
   width: 13px;
   height: 5px;
@@ -666,6 +667,13 @@
 .accordion__header-date {
   font-size: 14px;
 }
+.accordion .open {
+  transform: rotate(0deg);
+}
+
+.accordion__item[data-mode=car] {
+  height: 260px;
+}
 
 .more-reviews {
   display: flex;
@@ -681,6 +689,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Manrope-Regular", sans-serif;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .container {

@@ -4,12 +4,13 @@
     justify-content: space-between;
     &__item{
         width: 30%;
-        min-height: 150px;
+        height: 130px;
         border-radius: 10px;
         background-color: $white;
         position: relative;
         margin: 0 20px 20px 0;
         padding-bottom: 30px;
+        transition: .3s all;
     }
     &__image{
         width: 100%;
@@ -27,7 +28,7 @@
         position: absolute;
         bottom: 5px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) rotate(180deg);
         cursor: pointer;
         width: 13px;
         height: 5px;
@@ -51,5 +52,8 @@
         &-date{
             font-size: 14px;
         }
+    }
+    .open{
+        transform: rotate(0deg);
     }
 }

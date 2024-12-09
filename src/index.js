@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 textElement.textContent = fullText;
             }
+            const isCarItem = item.getAttribute('data-mode') === 'car';
+            item.style.height = (isCarItem ? 210 : 90) + textElement.offsetHeight + "px";
             arrowElement.classList.toggle('open');
         });
     });
