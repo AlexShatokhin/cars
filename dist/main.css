@@ -300,12 +300,22 @@
   background-color: rgba(231, 1, 1, 0.4);
 }
 
+.stages__content {
+  display: flex;
+  justify-content: space-between;
+}
+.stages__image {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 .stages__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style-type: none;
   counter-reset: custom-counter;
+  margin-left: 40px;
 }
 .stages__item {
   width: 310px;
@@ -608,6 +618,38 @@
 .contacts__phone {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.service__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.service__image {
+  width: 320px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.service__description {
+  width: 60%;
+  margin-left: 25px;
+}
+.service__text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 19px;
+}
+.service__text:first-child {
+  margin-top: 0;
+}
+.service__title {
+  color: #E70101;
+  font-weight: 600;
+  font-size: 16px;
+}
+.service__text-wrapper {
+  display: flex;
   justify-content: space-between;
 }
 

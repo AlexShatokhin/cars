@@ -1,0 +1,37 @@
+.service{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__image{
+        width: 320px;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    &__description{
+        width: 60%;
+        margin-left: 25px;
+    }
+
+    &__text{
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    &__text:first-child{
+        margin-top: 0;
+    }
+    &__title{
+        color: $red;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    &__text-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
