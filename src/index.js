@@ -51,4 +51,29 @@ document.addEventListener('DOMContentLoaded', () => {
         // }, 5000);
     })
 
+
+
+    const accordionItems = document.querySelectorAll('.accordion__item');
+
+    accordionItems.forEach(item => {
+        const textElement = item.querySelector('.accordion__text');
+        const arrowElement = item.querySelector('.accordion__arrow');
+        const fullText = textElement.textContent;
+        const truncatedText = fullText.slice(0, 100) + '...';
+
+        if (fullText.length > 100) {
+            textElement.textContent = truncatedText;
+        }
+
+        arrowElement.addEventListener('click', function() {
+            if (arrowElement.classList.contains('open')) {
+                textElement.textContent = truncatedText;
+            } else {
+                textElement.textContent = fullText;
+            }
+            const isCarItem = item.getAttribute('data-mode') === 'car';
+            item.style.height = (isCarItem ? 210 : 90) + textElement.offsetHeight + "px";
+            arrowElement.classList.toggle('open');
+        });
+    });
 });
