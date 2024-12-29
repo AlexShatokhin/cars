@@ -21,6 +21,9 @@
         margin-top: 20px;
         font-size: 14px;
         line-height: 19px;
+        &:last-child{
+            margin-left: 40px;
+        }
     }
     &__text:first-child{
         margin-top: 0;
@@ -32,6 +35,29 @@
     }
     &__text-wrapper{
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        div {
+            width: 50%;
+        }
+    }
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        p {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            .contact-list{
+                width: 50%;
+                text-align: left; 
+                color: #000000;
+                text-decoration: none;
+                transition: .2s all;
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
     }
 }

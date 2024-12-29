@@ -642,6 +642,9 @@
   font-size: 14px;
   line-height: 19px;
 }
+.service__text:last-child {
+  margin-left: 40px;
+}
 .service__text:first-child {
   margin-top: 0;
 }
@@ -652,7 +655,30 @@
 }
 .service__text-wrapper {
   display: flex;
+  align-items: center;
+}
+.service__text-wrapper div {
+  width: 50%;
+}
+.service__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.service__contacts p {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.service__contacts p .contact-list {
+  width: 50%;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.2s all;
+}
+.service__contacts p .contact-list:hover {
+  color: #E70101;
 }
 
 .accordion {
