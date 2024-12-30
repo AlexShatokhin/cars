@@ -536,7 +536,7 @@
   height: inherit;
 }
 .about__item-image {
-  width: 100%;
+  width: 740px;
   margin-right: 40px;
 }
 .about__item-image img {
@@ -598,7 +598,7 @@
 }
 .contacts__image {
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: -5px;
   width: 195px;
 }
 .contacts__text {
@@ -621,6 +621,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.contacts__phone a {
+  color: #000000;
+  text-decoration: none;
+  transition: 0.2s all;
+}
+.contacts__phone a:hover {
+  color: #E70101;
 }
 
 .service__wrapper {

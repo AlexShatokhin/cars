@@ -11,7 +11,7 @@
     }
     &__image{
         border-radius: 10px;
-        margin-bottom: 10px;
+        margin-bottom: -5px;
         width: 195px;
     }
     &__text{
@@ -35,5 +35,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        a{
+            color: #000000;
+            text-decoration: none;
+            transition: .2s all;
+            &:hover{
+                color: $red;
+            }
+        }
     }
 }
