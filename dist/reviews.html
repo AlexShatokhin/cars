@@ -6,6 +6,34 @@
     <title>Отзывы</title>
 <script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
 <body>
+    <section class="modal hidden">
+        <div class="modal__content">
+            <div class="section-title">Оставить заявку</div>
+            <form action="#" class="modal-form">
+                <!-- <div class="modal-item">
+                    <label for="modal-input-description">Опиcание</label>
+                    <textarea id="modal-input-description" type="text" class="modal-input modal-input-description" placeholder="Вы не смогли определиться или найти нужный автомобиль?
+Опишите кратко модель или характеристики, которые вам нужны. Мы свяжемся с вами в короткий срок и поможем найти оптимальный вариант под ваш бюджет и задачи!"></textarea>
+                </div> -->
+                <div class="modal-item">
+                    <p>Прекрасный выбор! Вы выбрали ХХХ. Заполните свои контактные данные, и мы оперативно свяжемся с вами, чтобы помочь с оформлением вашей мечты!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <div class="modal-item">
+                        <label for="modal-number">Номер телефона</label>
+                        <input id="modal-number" type="text" placeholder="+7 (xxx) xxx-xx-xx" class="modal-input">
+                    </div>
+                    <div class="modal-item">
+                        <label for="modal-telegram">Телеграмм (необязательно)</label>
+                        <input id="modal-telegram" placeholder="@nickname" type="text" class="modal-input">
+                    </div>
+                    <button class="button-main">Оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <section class="header">
         <div class="container">
             <div class="header__wrapper">
@@ -18,7 +46,7 @@
                             <li class="navigation-menu__list-item"><a href="./index.html">Главная</a></li>
                             <li class="navigation-menu__list-item"><a href="./about.html">О компании</a></li>
                             <li class="navigation-menu__list-item navigation-menu__list-item_active"><a href="./reviews.html">Отзывы</a></li>
-                            <li class="navigation-menu__list-item"><a href="#">Оставить заявку</a></li>
+                            <li class="navigation-menu__list-item"><a href="#" id="application">Оставить заявку</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -76,7 +104,7 @@
                             </div>
                         </div>
                         <div class="slider__button">
-                            <button class="button-main">Консультация</button>
+                            <button class="button-main" id="application">Консультация</button>
                         </div>
                     </div>
 
