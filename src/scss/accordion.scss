@@ -28,6 +28,7 @@
         position: absolute;
         bottom: 5px;
         left: 50%;
+        transition: .3s all;
         transform: translateX(-50%) rotate(180deg);
         cursor: pointer;
         width: 13px;
@@ -54,6 +55,6 @@
         }
     }
     .open{
-        transform: rotate(0deg);
+        transform: translateX(-50%) rotate(0deg);
     }
 }

@@ -720,6 +720,7 @@
   position: absolute;
   bottom: 5px;
   left: 50%;
+  transition: 0.3s all;
   transform: translateX(-50%) rotate(180deg);
   cursor: pointer;
   width: 13px;
@@ -746,7 +747,7 @@
   font-size: 14px;
 }
 .accordion .open {
-  transform: rotate(0deg);
+  transform: translateX(-50%) rotate(0deg);
 }
 
 .accordion__item[data-mode=car] {
